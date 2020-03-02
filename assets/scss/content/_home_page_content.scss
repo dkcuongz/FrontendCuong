@@ -1,0 +1,180 @@
+/*<-----------------------------------3.1 Home_page_content--------------------------------------------->*/
+
+$font-mont : 'Montserrat', sans-serif;
+$font-openSan : 'Open Sans', sans-serif;
+$color:#8262b5;
+.main{
+	margin-bottom: 60px;
+}
+.text{
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	.brand{
+		span,p{
+			letter-spacing: 0.5em;
+			color: $color;
+			font-weight: bold;
+		}
+	}
+
+	.cate{
+		letter-spacing: 0.1em;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.bo-hr{
+		width: 50px;
+		height: 10px;
+		border-bottom: 1px $color solid;
+	}
+}
+@mixin add-cart($bot,$left){
+	width: 120px;
+	height: 40px;
+	background-color: #ffff;
+	position: absolute;
+	bottom: $bot;
+	left: $left;
+	@include a($font-size,#8262b5,#000000);
+	a{
+		text-transform: uppercase;
+		display: block;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.feature-product{
+
+	.product-row{
+		margin-bottom: 20px;
+	}
+	.product-item{
+
+		.item{
+			position: relative;
+			margin-bottom: 18px;
+			img{	
+				max-height: 100%;
+				max-width: 100%;
+			}
+			.add-cart{
+				@include add-cart(5px,5px) 
+
+			}	
+		}
+		
+		.product-details{
+			
+			p{
+				font-size: 14px;
+				font-weight: bold;
+				font-family: $font-openSan;
+				margin:0 0 10px;
+			}
+			.star-color{
+				color: yellow;
+			}
+			.star{
+				color: #d1d1d1;
+			}
+			.line-through{
+				text-decoration:line-through;
+				color:$text-color;
+			}
+			.price{
+				font-weight: bold;
+				font-family: $font-openSan;
+				color: $color;
+			}
+		}
+	}
+}
+@media all and (min-width: 320px) and (max-width: 600px){
+	.main{
+		margin-bottom: 0;
+	}
+	.feature-product{
+
+		.product-row{
+			margin-bottom: 0;
+		}
+		.product-item{
+			margin-bottom: 10px;
+
+			.item{
+				display: flex;
+				justify-content: center;
+				position: relative;
+				margin-bottom: 18px;
+				img{	
+					max-height: 100%;
+					max-width: 100%;
+				}
+				.add-cart{
+					@include add-cart(5%,auto) 
+
+				}	
+			}
+			.product-details{
+				justify-content: center;
+				margin-bottom: 20px;
+				p{
+					margin: 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+@media all and (min-width: 600px) and (max-width: 768px){
+	.product-row{
+		display: flex;
+		justify-content: center;
+	}
+	.product-item{
+		margin-bottom: 10px;
+		width: 50%;
+		flex: 0 0 0 ;
+
+		.item{
+			
+			width: 210px;
+		}
+	}
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px){
+	.feature-product{
+
+		.product-row{
+			margin-bottom: 0;
+		}
+		.product-item{
+			text-align: center;
+			.item{
+				.add-cart{
+					@include add-cart(5%,31%) 
+				}	
+			}
+		}
+	}
+
+}
+@media all and (min-width: 1024px)and (max-width: 1368px) {
+	.feature-product{
+		.product-item{
+			.item{
+				.add-cart{
+					@include add-cart(5%,21%) 
+				}	
+			}
+		}
+	}
+
+}
