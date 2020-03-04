@@ -1,4 +1,7 @@
 .blog{
+	.container{
+		padding: 0 15px;
+	}
 	height: 710px;
 	background-image:url(../images/background.png);
 	background-repeat: no-repeat; 
@@ -12,15 +15,23 @@
 		font-weight: bold;
 		letter-spacing: 0.5em;
 		color: $color;
-		margin-bottom: 40px;
-		h2{
+		margin-bottom: 32px;
+		h3{
 			letter-spacing: 0.1em;
 			font-weight: bold;
 			color: #000000;
+			font-size: 24px;
 		}
 		hr{
+			margin-top: 22px;
 			width: 50px;
-			border-top: 1px solid $color;
+			border-top: 1.5px solid $color;
+		}
+		p{
+			margin-bottom: 12px;
+		}
+		.lastest{
+			margin-left: 3px;
 		}
 	} 
 	.blog-slide{
@@ -111,7 +122,7 @@
 				.blog-detail{
 					background-color: #fff;
 					border-bottom: 1px #ededed solid;
-					padding:20px 15px 0 15px;
+					padding:13px 15px 0 18px;
 					a{
 						color: #000;
 						font-weight: bold;
@@ -120,12 +131,16 @@
 							color:#9377bf;	
 						}
 					}
+					p{
+						margin-bottom: 14px;
+					}
 				}
 				.blog-icon{
+					font-size: 14px;
 					color: #e6e6e6;
 					background-color: #fff;
 					height: 50px;
-					padding: 15px 0 0 5px;
+					padding: 10px 0 0 5px;
 					span {
 						padding-left: 15px;
 					}

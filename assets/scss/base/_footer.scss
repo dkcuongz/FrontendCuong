@@ -1,5 +1,4 @@
 footer{
-	font-family: $font-openSan;
 	background-color: #222222;
 	height: 420px;
 	.center{
@@ -8,6 +7,7 @@ footer{
 
 	}
 	.text-center-detail{
+		font-family: $font-openSan;
 		font-size: $font-size;
 		padding: 0px;
 		a{
@@ -23,8 +23,8 @@ footer{
 		}
 	}
 	.title{
-		height: 110px;
-		padding-top: 60px;
+		height: 107px;
+		padding-top: 57px;
 		border-bottom: 1px $text-color solid;
 		p{
 			color:#dbdbdb;
@@ -32,12 +32,17 @@ footer{
 		}	
 	}
 	.detail{
-		padding: 30px 0 0 0;
+
+		padding: 24px 0 0 0;
 		p{
-			font-size: $font-size;
+			font-family: $font-openSan;
+			font-size: 14px;
 			color:#818181;
 		}
 		&__location{
+			a{
+				color: #818181;
+			}
 			p{
 				text-transform: capitalize;
 			}
@@ -71,15 +76,10 @@ footer{
 		text-align: right;
 	}
 }
-@media all and (min-width: 320px) and (max-width: 600px){
+@media all  and (max-width: 575px){
 	footer{
-		height: 550px;
-		.about-shop{
-			display: none;
-		}
-		.shop-location{
-			display: none;
-		}
+		padding: 0 15px;
+		height: auto;
 		.center{
 			margin: 0 ;
 			display: flex;
@@ -89,37 +89,27 @@ footer{
 			height: 50px;
 			padding-top: 10px;
 		}
-		.visa-icon{
-			display: none;
-		}
 		.stick-footer{
 			text-align: center;
 		}
 	}
 }
-@media all and (min-width: 600px) and (max-width: 768px){
+@media all and (min-width: 576px) and (max-width: 767px){
 	footer{
-		height: 550px;
-		.about-shop{
-			display: none;
-		}
-		.shop-location{
-			display: none;
-		}
-		.visa-icon{
-			display: none;
+		padding: 0 15px;
+		height: auto;
+		.center{
+			margin:  0;
+
 		}
 	}
-
 }
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 768px) and (max-width: 991px){
 	footer{
-		height: 800px;
-		.about-shop{
-			display: none;
-		}
-		.shop-location{
-			display: none;
+		padding: 0 15px;
+		height: auto;
+		.center{
+			margin:  0;
 		}
 	}
 }

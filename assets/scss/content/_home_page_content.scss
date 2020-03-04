@@ -4,14 +4,15 @@ $font-mont : 'Montserrat', sans-serif;
 $font-openSan : 'Open Sans', sans-serif;
 $color:#8262b5;
 .main{
-	margin-bottom: 60px;
+	margin-bottom: 72px;
 }
 .text{
 	margin-bottom: 50px;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 12px;
 
 	.brand{
+		margin-bottom: 7px;
 		span,p{
 			letter-spacing: 0.5em;
 			color: $color;
@@ -27,7 +28,7 @@ $color:#8262b5;
 
 	.bo-hr{
 		width: 50px;
-		height: 10px;
+		height: 5px;
 		border-bottom: 1px $color solid;
 	}
 }
@@ -38,7 +39,7 @@ $color:#8262b5;
 	position: absolute;
 	bottom: $bot;
 	left: $left;
-	@include a($font-size,#8262b5,#000000);
+	@include a(12px,#8262b5,#000000);
 	a{
 		text-transform: uppercase;
 		display: block;
@@ -52,13 +53,13 @@ $color:#8262b5;
 .feature-product{
 
 	.product-row{
-		margin-bottom: 20px;
+		margin-bottom: 42px;
 	}
 	.product-item{
 
 		.item{
 			position: relative;
-			margin-bottom: 18px;
+			margin-bottom: 15px;
 			img{	
 				max-height: 100%;
 				max-width: 100%;
@@ -72,15 +73,18 @@ $color:#8262b5;
 		.product-details{
 			
 			p{
+				padding-bottom: 3px;
 				font-size: 14px;
 				font-weight: bold;
 				font-family: $font-openSan;
-				margin:0 0 10px;
+				margin:0 0 1px;
 			}
 			.star-color{
+				font-size: 12px;
 				color: yellow;
 			}
 			.star{
+				font-size: 12px;
 				color: #d1d1d1;
 			}
 			.line-through{
@@ -95,7 +99,8 @@ $color:#8262b5;
 		}
 	}
 }
-@media all and (min-width: 320px) and (max-width: 600px){
+@media all  and (max-width: 575px){
+	.text{padding-left: 15px;}
 	.main{
 		margin-bottom: 0;
 	}
@@ -132,7 +137,7 @@ $color:#8262b5;
 		}
 	}
 }
-@media all and (min-width: 600px) and (max-width: 768px){
+@media all and (min-width: 575px) and (max-width: 767px){
 	.product-row{
 		display: flex;
 		justify-content: center;
