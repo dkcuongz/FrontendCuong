@@ -932,7 +932,7 @@
       .feature-product .product-item .product-details p {
         margin: 0;
         text-align: center; } }
-@media all and (min-width: 480px) and (max-width: 575px) {
+@media all and (min-width: 480px) and (max-width: 574px) {
   .feature-product .product-item {
     width: 50%; } }
 @media all and (min-width: 575px) and (max-width: 767px) {
