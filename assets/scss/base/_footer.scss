@@ -113,9 +113,9 @@ footer{
 		}
 	}
 }
-@media all and (min-width: 1024px) and (max-width: 1336px){
+@media all and (min-width: 992px) and (max-width: 1199px){
 	footer{
-		height: 1150px;
+		height: auto;
 		.about-shop{
 			display: initial;
 		}

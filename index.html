@@ -36,10 +36,12 @@
 				<div class="logo">
 					<a href="#"><img src="assets/images/logo.png" alt="Logo Shop"></a>				
 				</div>
-				<div class="nav-link dropdown">
-					<span class="menu"><i class="fas fa-bars dropbtn" onclick="myFunction()" ></i></span>
-					<div id="myDropdown" class="dropdown-content">
-						<ul >
+				<div class="nav-link">
+					<input type="checkbox" id="chk">
+					<label for="chk" class="show-menu-btn">
+						<span ><i class="fas fa-bars dropbtn" ></i></span>
+					</label>
+						<ul class="menu" >
 							<li><a href="#">home</a></li>
 							<li><a href="#">women</a></li>
 							<li><a href="#">man</a></li>
@@ -48,8 +50,10 @@
 							<li><a href="#">collections</a></li>
 							<li><a href="#">contact</a></li>
 							<li><a href=""><i class="fas fa-search"></i></a></li>
+							<label for="chk" class="hide-menu-btn">
+								<i class="fas fa-times"></i>
+							</label>
 						</ul>
-					</div>
 				</div>
 				<div class="icon-link">
 					<ul>
@@ -63,22 +67,26 @@
 	<section class="container main">
 		<div class="banner">
 			<div class="row">
-				<div class="col-lg-8 col-sm-12 col-md-12  ">
+				<div class="col-lg-8 col-sm-12 col-md-12 col-xl-8 ">
 					<a href="#"><img src="assets/images/banner1.png" alt="Banner 1"></a>
 					<div class="shop-now"><a href="">Shop Now</a></div>
 					<span class="two">Two High-end Materials</span>
 				</div>
-				<div class="col-lg-4 col-md-12 banner-aside">
-					<div class="aside-1 col-sm-6 col-md-6 col-lg-12 ">
+				<div class="col-lg-4 col-md-12 col-xl-4 banner-aside">
+					<div class="aside-1 col-sm-6 col-md-6 col-lg-12 col-xl-12">
 						<a href="#"><img src="assets/images/banner2.png" alt="Banner 2"></a>
-						<span class="small">small thing</span>
-						<span class="make">make different</span>
+						<div class="text-brand-1">
+							<p class="small">small thing</p>
+							<p class="make">make different</p>
+						</div>
 					</div>
-					<div class="aside-2 col-sm-6 col-md-6 col-lg-12 ">
+					<div class="aside-2 col-sm-6 col-md-6 col-lg-12 col-xl-8 ">
 						<a href="#"><img src="assets/images/banner3.png" alt="Banner 3"></a>
 						<div class="shop-now-2"><a href="">Shop Now</a></div>
-						<span class="folio">folio</span>
-						<span class="back">back pack</span>
+						<div class="text-brand-2">
+							<p class="folio">folio</p>
+							<p class="back">back pack</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -352,7 +360,7 @@
 				}
 			},
 			{
-				breakpoint: 991,
+				breakpoint: 992,
 				settings: {
 					arrows: false,
 					centerMode: true,
@@ -382,7 +390,7 @@
 		});
 	});
 </script>
-<script>
+<!-- <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -402,6 +410,6 @@ window.onclick = function(event) {
 		}
 	}
 }
-</script>
+</script> -->
 </body>
 </html>

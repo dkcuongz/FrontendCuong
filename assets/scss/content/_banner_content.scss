@@ -47,38 +47,42 @@ $font-paci:'Pacifico', cursive;
 	}
 	.aside-1{
 		margin-bottom:  30px;
-		.small{
+		.text-brand-1{
+			p{
+				margin: -6px;
+			}
 			position: absolute;
+			top:50%;
+			transform: translate(calc(50% - 22px),calc(-50% + 5px));
+		.small{
 			font-size: 20px;
 			text-transform: uppercase;
-			top: 78px;
-			left:70px;
 		} 
 		.make{
-			position: absolute;
 			font-size: 20px;
 			text-transform: uppercase;
 			font-weight: bold;
-			top: 100px;
-			left:70px;
 		} 
 	}
+	}
 	.aside-2{
-		.folio{
+		.text-brand-2{
+			p{
+				margin: -6px;
+			}
 			position: absolute;
+			top:50%;
+			transform: translate(calc(50% - 10px),calc(-50% - 25px));
+		.folio{
 			font-size: 20px;
 			text-transform: uppercase;
-			top: 115px;
-			left:35px;
 		} 
 		.back{
-			position: absolute;
 			font-size: 20px;
 			text-transform: uppercase;
 			font-weight: bold;
-			top: 136px;
-			left:35px;
 		} 
+	}
 	}
 }
 .shop-now{
@@ -99,9 +103,9 @@ $font-paci:'Pacifico', cursive;
 			max-height: 100%;
 		}
 		.two{
-			font-size: 18px;
+			font-size: 14px;
 			top: 58%;
-			left:50%;
+			left:45%;
 		}
 	}
 	.shop-now{
@@ -264,7 +268,7 @@ $font-paci:'Pacifico', cursive;
 		@include shop-now(23%,60%,105px,40px);
 	}
 }
-@media all and (min-width:991px) and (max-width: 1200px) {
+@media all and (min-width:991px) and (max-width: 1199px) {
 	.banner{
 		.two{
 			font-size: 26px;
